@@ -1,5 +1,5 @@
-import BlankLayout from "conmponents/hoc/layout/blankLayout"
-import MainLayout from "conmponents/hoc/layout/mainLayout"
+import BlankLayout from "components/hoc/layout/blankLayout"
+import MainLayout from "components/hoc/layout/mainLayout"
 import "../styles/globals.css"
 
 function MyApp({ Component, pageProps }) {

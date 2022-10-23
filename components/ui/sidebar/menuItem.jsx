@@ -3,7 +3,6 @@ import { useRouter } from "next/router"
 
 const MenuItem = ({ data }) => {
   const router = useRouter()
-  console.log(router)
   return (
     <div>
       <button
