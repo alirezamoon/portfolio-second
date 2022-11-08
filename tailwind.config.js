@@ -18,6 +18,18 @@ module.exports = {
           main: "#0AD7B8",
         },
       },
+      fontFamily: {
+        logo: ["Bowlby One SC", "cursive"],
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "translateX(2em)" },
+          "50%": { transform: "translateX(4em)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

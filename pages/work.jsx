@@ -1,11 +1,5 @@
-import TextShpere from "components/textSphere"
-
 const WorkPage = () => {
-  return (
-    <div className="workPage h-full">
-      <TextShpere />
-    </div>
-  )
+  return <div className="workPage h-full"></div>
 }
 
 WorkPage.layout = "main"

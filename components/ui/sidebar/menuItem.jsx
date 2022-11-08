@@ -6,14 +6,14 @@ const MenuItem = ({ data }) => {
   return (
     <div>
       <button
-        className={`text-gray-light w-full  [&>a]:w-full [&>a]:block py-3 border-b border-x-0 border-gray-main first:border-t hover:text-teal-main duration-300 ${
+        className={`text-gray-light w-full border-b border-x-0 border-gray-main first:border-t hover:text-teal-main duration-300 ${
           router.pathname.includes(data.route)
             ? "text-teal-main"
             : "text-gray-light"
         } `}
       >
         <Link href={data.route}>
-          <a>{data.text}</a>
+          <a className="h-full w-full block py-3">{data.text}</a>
         </Link>
       </button>
     </div>

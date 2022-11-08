@@ -5,7 +5,7 @@ const Menu = () => {
   return (
     <div className="flex flex-col">
       {menuData.map((item) => (
-        <MenuItem data={item} />
+        <MenuItem data={item} key={item.key} />
       ))}
     </div>
   )
