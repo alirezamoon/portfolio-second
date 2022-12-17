@@ -11,8 +11,10 @@ module.exports = {
           lighter: "#a5a5a5",
           light: "#909096",
           main: "#282828",
+          main2: "#252627",
           dark: "#1d1d1d",
           darker: "#181818",
+          menu: "#808081",
         },
         teal: {
           main: "#0AD7B8",
