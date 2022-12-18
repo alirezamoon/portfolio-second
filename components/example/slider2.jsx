@@ -33,6 +33,7 @@ const Slider2 = () => {
         >
           {sliderItems.map((sliderPage, index) => (
             <div
+              key={index}
               className={`flex h-full w-full duration-1000`}
               style={{ minWidth: `${+(100 / cols).toFixed(0)}%` }}
             >

@@ -41,6 +41,7 @@ const Slider = () => {
           <div className="w-full h-64" />
           {sliderItems.map((sliderPage, index) => (
             <div
+              key={index}
               className={`flex justify-around gap-1 absolute top-0 w-full h-full
              transition-all duration-1000 ${
                page <= index

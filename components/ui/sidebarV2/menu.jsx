@@ -5,8 +5,8 @@ import MenuItem from "./menuItem"
 const Menu = () => {
   return (
     <div className="flex flex-col items-center">
-      {menuData.map((item) => (
-        <MenuItem data={item} />
+      {menuData.map((item, key) => (
+        <MenuItem data={item} key={index} />
       ))}
     </div>
   )
