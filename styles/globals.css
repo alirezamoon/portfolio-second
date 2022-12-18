@@ -21,3 +21,9 @@
       url("../fonts/bowlby-one-sc-v19-latin-regular.svg#BowlbyOneSC")
       format("svg"); /* Legacy iOS */
 }
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
