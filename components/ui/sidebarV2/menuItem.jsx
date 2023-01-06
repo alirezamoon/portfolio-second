@@ -37,10 +37,8 @@ const MenuItem = ({ data }) => {
             : "text-gray-light"
         } `}
       >
-        <Link href={data.route}>
-          <a className="h-full w-full block py-3 [&:hover_path]:fill-teal-main hover:animate-spin transition-all ">
+        <Link href={data.route} className="h-full w-full block py-3 [&:hover_path]:fill-teal-main transition-all">
             {icon}
-          </a>
         </Link>
       </button>
     </div>

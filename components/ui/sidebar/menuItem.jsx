@@ -12,8 +12,8 @@ const MenuItem = ({ data }) => {
             : "text-gray-light"
         } `}
       >
-        <Link href={data.route}>
-          <a className="h-full w-full block py-3">{data.text}</a>
+        <Link href={data.route} className="h-full w-full block py-3">
+          {data.text}
         </Link>
       </button>
     </div>
