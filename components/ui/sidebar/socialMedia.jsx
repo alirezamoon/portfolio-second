@@ -1,5 +1,3 @@
-import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa"
-import { AiFillInstagram } from "react-icons/ai"
 import { motion } from "framer-motion"
 
 const SocialMedia = () => {
@@ -21,14 +19,10 @@ const SocialMedia = () => {
         initial="hidden"
         variants={vTelegram}
       >
-        <FaTelegramPlane />
+        {/* telegram icon */}
       </motion.button>
-      <button className="mx-2">
-        <AiFillInstagram />
-      </button>
-      <button>
-        <FaLinkedinIn />
-      </button>
+      <button className="mx-2">{/* instagram icon */}</button>
+      <button>{/* lenkedin icon */}</button>
     </div>
   )
 }
