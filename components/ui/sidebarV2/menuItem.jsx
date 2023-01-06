@@ -29,17 +29,22 @@ const MenuItem = ({ data }) => {
   }, [data])
 
   return (
-    <div>
+    <div className="w-full">
       <button
-        className={`text-gray-light w-full  hover:text-teal-main duration-300 ${
-          router.pathname.includes(data.route)
-            ? "text-teal-main"
-            : "text-gray-light"
-        } `}
+        className={`text-gray-light w-full  hover:text-teal-main duration-300 h-12
+         ${
+           router.pathname.includes(data.route)
+             ? "text-teal-main"
+             : "text-gray-light"
+         } [&:hover>a]:hidden [&:hover>p]:block`}
       >
-        <Link href={data.route} className="h-full w-full block py-3 [&:hover_path]:fill-teal-main transition-all">
-            {icon}
+        <Link
+          href={data.route}
+          className="w-full [&:hover_path]:fill-teal-main transition-all flex justify-center"
+        >
+          {icon}
         </Link>
+        <p className="hidden leading-6 text-teal-main">{data.title}</p>
       </button>
     </div>
   )
