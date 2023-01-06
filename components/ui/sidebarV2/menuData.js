@@ -2,7 +2,7 @@ export const menuData = [
   {
     key: "home",
     title: "Home",
-    route: "/home",
+    route: "/",
   },
   {
     key: "about",

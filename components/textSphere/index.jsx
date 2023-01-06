@@ -3,6 +3,11 @@ import TagCloud from "react-tag-cloud"
 
 const TextShpere = () => {
   const [update, setUpdate] = useState(0)
+  const [width, setWidth] = useState()
+
+  useEffect(() => {
+    setWidth(window.innerWidth)
+  }, [])
 
   useEffect(() => {
     setTimeout(() => {
@@ -14,11 +19,11 @@ const TextShpere = () => {
     <div className="items-center flex flex-col justify-center py-5 w-full h-full">
       <div className="flex flex-col h-full max-w-5xl w-full">
         <TagCloud
-          className="flex-1  [&_div]:text-gray-light [&_.teal]:text-[#fc0853] [&_div]:duration-1000 duration-1000"
+          className="flex-1 [&_div]:text-gray-light [&_.teal]:text-[#fc0853] [&_div]:duration-1000 duration-1000"
           style={{
             fontFamily: "sans-serif",
             // fontSize: () => Math.round(Math.random() * 50) + 16,
-            fontSize: 30,
+            fontSize: width > 768 ? 30 : 14,
             padding: 5,
             flex: 1,
             color: "#fff",
