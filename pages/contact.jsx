@@ -1,5 +1,7 @@
+import Contact from "components/contact"
+
 const ContactPage = () => {
-  return <div></div>
+  return <Contact />
 }
 
 ContactPage.layout = "main"

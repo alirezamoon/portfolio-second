@@ -3,12 +3,12 @@ import A from "components/ui/a"
 const Home = () => {
   return (
     <div className="flex flex-col">
-      <div className="html ml-12 [&_.tag]:text-gray-tag flex-1 flex flex-col my-6">
+      <div className="ml-12 [&_.tag]:text-gray-tag flex-1 flex flex-col my-6">
         <p className="tag">&#8826;html&#8827;</p>
-        <div className="body ml-6 [&>div]:ml-12 flex-1 flex flex-col justify-between">
+        <div className="ml-6 [&>div]:ml-12 flex-1 flex flex-col justify-between">
           <p className="tag">&#8826;body&#8827;</p>
           <div>
-            <div className="h1">
+            <div>
               <p className="tag">&#8826;h1&#8827;</p>
               <h1 className="text-white text-7xl font-bold ml-6">
                 <span>Hi,</span>
@@ -21,7 +21,7 @@ const Home = () => {
               </h1>
               <p className="tag">&#8826;/h1&#8827;</p>
             </div>
-            <div className="p">
+            <div>
               <p className="tag">&#8826;p&#8827;</p>
               <p className="ml-6 text-gray-1000">
                 Front End Developer / ReactJs / NextJs

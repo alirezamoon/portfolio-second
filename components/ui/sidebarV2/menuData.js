@@ -15,8 +15,8 @@ export const menuData = [
     route: "/skills",
   },
   {
-    key: "work",
-    title: "Work",
-    route: "/work",
+    key: "contact",
+    title: "Contact",
+    route: "/contact",
   },
 ]

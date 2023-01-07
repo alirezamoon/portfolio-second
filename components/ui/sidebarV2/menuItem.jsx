@@ -19,7 +19,7 @@ const MenuItem = ({ data }) => {
       case "skills":
         setIcon(<Setting set="bold" primaryColor="#808081" />)
         break
-      case "work":
+      case "contact":
         setIcon(<Message set="bold" primaryColor="#808081" />)
         break
 
