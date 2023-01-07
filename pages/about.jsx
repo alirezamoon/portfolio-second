@@ -1,9 +1,7 @@
+import About from "components/about"
+
 const AboutPage = () => {
-  return (
-    <div className="h-full w-full flex justify-center items-center">
-      <h1 className="text-9xl text-white">About</h1>
-    </div>
-  )
+  return <About />
 }
 
 AboutPage.layout = "main"

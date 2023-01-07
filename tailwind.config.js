@@ -19,7 +19,8 @@ module.exports = {
           1000: "#8d8d8d",
         },
         teal: {
-          main: "#0AD7B8",
+          main: "#08fdd8",
+          // main: "#0AD7B8",
         },
       },
       fontFamily: {
