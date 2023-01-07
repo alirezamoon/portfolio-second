@@ -1,10 +1,11 @@
 const A = ({ className }) => {
   return (
     <a
-      className={`block text-6xl text-center cursor-pointer font-logo bg-clip-text  text-transparent ${className}`}
+      className={`block text-center cursor-pointer font-logo w-fit
+                  bg-clip-text text-transparent text-6xl ${className}`}
       style={{
         background:
-          "linear-gradient(60deg, #fc0853 31%, #fc0853 52%, #08fdd8 52%, #08fdd8 72%)",
+          "linear-gradient(60deg, #fc0853 31%, #fc0853 65%, #08fdd8 65%, #08fdd8 72%)",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
       }}
