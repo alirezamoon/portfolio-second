@@ -58,6 +58,29 @@ module.exports = {
           "0%": { opacity: 1 },
           "100%": { opacity: 0, visibility: "hidden" },
         },
+        telegram: {
+          "0%": {
+            transform: "translateY(100px) translateX(-100px)",
+            opacity: 0,
+          },
+          "100%": { transform: "translateY(0) translateX(0)", opacity: 1 },
+        },
+        linkedin: {
+          "0%": { transform: "translateY(-50px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        linkedinMobile: {
+          "0%": { transform: "translateX(200%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        menuItems: {
+          "0%": { transform: "translateX(-20px)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        logo: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
@@ -66,6 +89,11 @@ module.exports = {
         sidebarClose: "sidebarClose .5s ease-in-out forwards",
         opacity: "opacity 1s ease-in-out forwards",
         opacityR: "opacityR 1s ease-in-out forwards",
+        telegram: "telegram 1s ease-out forwards",
+        linkedin: "linkedin 1s ease-in-out forwards",
+        linkedinMobile: "linkedinMobile 500ms ease-in-out forwards",
+        menuItems: "menuItems 500ms ease-in-out forwards",
+        logo: "logo 500ms ease-in-out forwards",
       },
     },
   },

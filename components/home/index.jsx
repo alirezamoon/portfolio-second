@@ -11,11 +11,11 @@ const Home = () => {
           <div>
             <div>
               <p className="tag">&#8826;h1&#8827;</p>
-              <h1 className="text-white text-4xl md:text-7xl font-bold ml-3 md:ml-6">
+              <h1 className="text-white text-5xl md:text-7xl font-bold ml-3 md:ml-6">
                 <span>Hi,</span>
                 <br />
                 <span>I&apos;m </span>
-                <A className="!inline-block !text-4xl md:!text-7xl" />
+                <A className="!inline-block !text-5xl md:!text-7xl" />
                 <span>lireza</span>
                 <br />
                 <span>web developer</span>
