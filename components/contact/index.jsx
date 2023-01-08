@@ -8,9 +8,7 @@ const Contact = () => {
           <div>
             <div>
               <p className="tag">&#8826;h2&#8827;</p>
-              <h2 className="text-teal-main text-7xl font-bold ml-6">
-                Contact me
-              </h2>
+              <h2 className="top-title">Contact me</h2>
               <p className="tag">&#8826;/h2&#8827;</p>
             </div>
             <div className="text-white ml-6 flex flex-col gap-2 mt-6">
