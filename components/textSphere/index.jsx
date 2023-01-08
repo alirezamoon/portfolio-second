@@ -16,8 +16,8 @@ const TextShpere = () => {
   }, [update])
 
   return (
-    <div className="items-center flex flex-col justify-center py-5 w-full h-full">
-      <div className="flex flex-col h-full max-w-5xl w-full">
+    <div className="items-center flex flex-col justify-center py-5 w-full h-full flex-1">
+      <div className="flex flex-col h-full max-w-5xl w-full flex-1">
         <TagCloud
           className="flex-1 [&_div]:text-gray-light [&_.teal]:text-[#fc0853] [&_div]:duration-1000 duration-1000"
           style={{

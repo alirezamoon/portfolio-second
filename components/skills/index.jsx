@@ -27,7 +27,7 @@ const Skills = () => {
           <p className="tag">&#8826;/html&#8827;</p>
         </div>
       </div>
-      <div className="h-full flex-1 w-full">
+      <div className="h-full flex-1 w-full flex flex-col">
         <TextShpere />
       </div>
     </div>
