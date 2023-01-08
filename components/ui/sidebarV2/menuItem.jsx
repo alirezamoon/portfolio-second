@@ -1,9 +1,9 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import HomeIcon from "../svg/HomeIcon"
-import MessageIcon from "../svg/MessageIcon"
-import SettingIcon from "../svg/SettingIcon"
+import HomeIcon from "../svg/homeIcon"
+import MessageIcon from "../svg/messageIcon"
+import SettingIcon from "../svg/settingIcon"
 import UserIcon from "../svg/userIcon"
 
 const MenuItem = ({ data }) => {
