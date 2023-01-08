@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div className="flex h-full flex-col lg:flex-row">
       <div className="flex flex-col">
-        <div className="ml-12 [&_.tag]:text-gray-tag flex-1 flex flex-col my-6">
+        <div className="[&_.tag]:text-gray-tag flex-1 flex flex-col">
           <p className="tag">&#8826;html&#8827;</p>
           <div className="ml-6 [&>div]:ml-12 flex-1 flex flex-col justify-between">
             <p className="tag">&#8826;body&#8827;</p>
