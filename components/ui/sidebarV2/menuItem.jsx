@@ -30,12 +30,16 @@ const MenuItem = ({ data }) => {
 
   return (
     <div
-      className={`text-gray-light w-full  hover:text-teal-main duration-300 h-12
-    ${
-      router.pathname.includes(data.route)
-        ? "text-teal-main"
-        : "text-gray-light"
-    } md:[&:hover>.menu-item-icon]:hidden md:[&:hover>.menu-item-text]:flex`}
+      className={`w-full duration-300 h-12 md:[&:hover>.menu-item-icon]:hidden md:[&:hover>.menu-item-text]:flex
+                ${
+                  data.route !== "/"
+                    ? router.pathname.includes(data.route)
+                      ? " [&_path]:fill-teal-main"
+                      : ""
+                    : router.pathname === "/"
+                    ? " [&_path]:fill-teal-main"
+                    : ""
+                }`}
     >
       <Link
         href={data.route}
