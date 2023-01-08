@@ -1,7 +1,10 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import { Home, Message, Setting, User } from "react-iconly"
+import HomeIcon from "../svg/HomeIcon"
+import MessageIcon from "../svg/MessageIcon"
+import SettingIcon from "../svg/SettingIcon"
+import UserIcon from "../svg/userIcon"
 
 const MenuItem = ({ data }) => {
   const router = useRouter()
@@ -11,16 +14,16 @@ const MenuItem = ({ data }) => {
   useEffect(() => {
     switch (data.key) {
       case "home":
-        setIcon(<Home set="bold" primaryColor="#808081" />)
+        setIcon(<HomeIcon />)
         break
       case "about":
-        setIcon(<User set="bold" primaryColor="#808081" />)
+        setIcon(<UserIcon />)
         break
       case "skills":
-        setIcon(<Setting set="bold" primaryColor="#808081" />)
+        setIcon(<SettingIcon />)
         break
       case "contact":
-        setIcon(<Message set="bold" primaryColor="#808081" />)
+        setIcon(<MessageIcon />)
         break
 
       default:
@@ -30,7 +33,7 @@ const MenuItem = ({ data }) => {
 
   return (
     <div
-      className={`w-full duration-300 h-12 md:[&:hover>.menu-item-icon]:hidden md:[&:hover>.menu-item-text]:flex
+      className={`w-full duration-300 h-12 md:[&:hover>.menu-item-icon]:hidden md:[&:hover>.menu-item-text]:flex 
                 ${
                   data.route !== "/"
                     ? router.pathname.includes(data.route)

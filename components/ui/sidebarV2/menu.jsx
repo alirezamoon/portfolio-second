@@ -1,5 +1,3 @@
-import Link from "next/link"
-import { Home, Message, User } from "react-iconly"
 import { menuData } from "./menuData"
 import MenuItem from "./menuItem"
 

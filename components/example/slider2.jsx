@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { ChevronLeft, ChevronRight } from "react-iconly"
 
 const sliderItems = [
   <div className="bg-orange-100 w-full" key={1}>
