@@ -13,7 +13,7 @@ const Contact = () => {
             </div>
             <div className="text-white ml-3 md:ml-6 flex flex-col gap-2 mt-6">
               <p>
-                if you have any questions, please don't hesitate to contact
+                if you have any questions, please don&apos;t hesitate to contact
                 me...
               </p>
               <p>

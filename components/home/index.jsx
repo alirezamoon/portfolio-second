@@ -14,7 +14,7 @@ const Home = () => {
               <h1 className="text-white text-4xl md:text-7xl font-bold ml-3 md:ml-6">
                 <span>Hi,</span>
                 <br />
-                <span>I'm </span>
+                <span>I&apos;m </span>
                 <A className="!inline-block !text-4xl md:!text-7xl" />
                 <span>lireza</span>
                 <br />
