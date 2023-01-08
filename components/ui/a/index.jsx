@@ -1,6 +1,8 @@
+import Link from "next/link"
+
 const A = ({ className }) => {
   return (
-    <a
+    <Link
       className={`block text-center cursor-pointer font-logo w-fit
                   bg-clip-text text-transparent text-6xl ${className}`}
       style={{
@@ -9,9 +11,10 @@ const A = ({ className }) => {
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
       }}
+      href="/"
     >
       A
-    </a>
+    </Link>
   )
 }
 
