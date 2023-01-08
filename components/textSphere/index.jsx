@@ -1,13 +1,10 @@
+import useWindowSize from "components/hooks/windowSize"
 import { useEffect, useState } from "react"
 import TagCloud from "react-tag-cloud"
 
 const TextShpere = () => {
   const [update, setUpdate] = useState(0)
-  const [width, setWidth] = useState()
-
-  useEffect(() => {
-    setWidth(window.innerWidth)
-  }, [])
+  const { width } = useWindowSize()
 
   useEffect(() => {
     setTimeout(() => {
