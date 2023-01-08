@@ -2,7 +2,7 @@ import TextShpere from "components/textSphere"
 
 const Skills = () => {
   return (
-    <div className="flex h-full flex-col lg:flex-row">
+    <div className="flex h-full flex-col lg:flex-row p-2 sm:p-6 md:p-12">
       <div className="flex flex-col">
         <div className="[&_.tag]:text-gray-tag flex-1 flex flex-col">
           <p className="tag">&#8826;html&#8827;</p>

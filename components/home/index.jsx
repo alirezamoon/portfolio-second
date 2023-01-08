@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Home = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col p-2 sm:p-6 md:p-12">
       <div className="[&_.tag]:text-gray-tag flex-1 flex flex-col">
         <p className="tag">&#8826;html&#8827;</p>
         <div className="ml-3 md:ml-6 [&>div]:ml-3 md:[&>div]:ml-6 flex-1 flex flex-col justify-between">
