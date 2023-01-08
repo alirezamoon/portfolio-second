@@ -46,16 +46,16 @@ const MenuItem = ({ data }) => {
     >
       <Link
         href={data.route}
-        className="w-full h-full transition-all flex justify-center items-center
-                [&:hover_path]:fill-teal-main  menu-item-icon"
+        className="relative w-full h-full flex justify-center items-center  
+                  [&:hover>p]:opacity-100 [&:hover>div]:opacity-0"
       >
-        {icon}
-      </Link>
-      <Link
-        href={data.route}
-        className="hidden text-teal-main menu-item-text h-full w-full text-center justify-center items-center"
-      >
-        {data.title}
+        <div className="transition-opacity duration-300">{icon}</div>
+        <p
+          className="absolute top-1/2 -translate-y-1/2 w-full text-center opacity-0
+                     transition-opacity duration-300 text-teal-main text-sm"
+        >
+          {data.title}
+        </p>
       </Link>
     </div>
   )
