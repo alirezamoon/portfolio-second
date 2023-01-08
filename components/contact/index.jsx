@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col">
       <div className="[&_.tag]:text-gray-tag flex-1 flex flex-col">
         <p className="tag">&#8826;html&#8827;</p>
         <div className="ml-6 [&>div]:ml-12 flex-1 flex flex-col justify-between">

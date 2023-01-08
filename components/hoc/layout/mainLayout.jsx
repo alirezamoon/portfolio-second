@@ -2,9 +2,11 @@ import Sidebar from "../../ui/sidebarV2"
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="flex flex-col md:flex-row h-screen">
+    <div className="flex flex-col md:flex-row min-h-screen">
       <Sidebar />
-      <main className="w-full h-full bg-gray-main2 p-12">{children}</main>
+      <main className="w-full min-h-screen bg-gray-main2 p-2 sm:p-6 md:p-12 [&>div]:h-full">
+        {children}
+      </main>
     </div>
   )
 }

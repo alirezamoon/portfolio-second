@@ -1,11 +1,7 @@
 import Home from "components/home"
 
 const HomePage = () => {
-  return (
-    <div className="flex container h-screen">
-      <Home />
-    </div>
-  )
+  return <Home />
 }
 
 HomePage.layout = "main"
