@@ -3,7 +3,7 @@ import Telegram from "../svg/telegram"
 
 const SocialMedia = () => {
   return (
-    <div className="flex flex-col gap-3 mx-auto mb-11 [&>a:hover_path]:fill-teal-main cursor-pointer">
+    <div className="flex md:flex-col gap-3 md:mx-auto md:mb-11 [&>a:hover_path]:fill-teal-main cursor-pointer items-center">
       <a href="https://t.me/alirez97/" target="_blank" rel="noreferrer">
         <Telegram />
       </a>
