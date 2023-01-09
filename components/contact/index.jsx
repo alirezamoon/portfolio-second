@@ -42,7 +42,7 @@ const Contact = () => {
           <p className="tag">&#8826;/html&#8827;</p>
         </div>
       </div>
-      <div className="flex-1 w-full [&>div]:w-full [&>div]:h-full">
+      <div className="flex-1 w-full [&>div]:w-full [&>div]:h-full [&>div]:bg-[#090909]">
         <Map />
       </div>
     </div>

@@ -20,7 +20,7 @@ const Map = () => {
   const position = [30.27608011393118, 56.99194192886353]
 
   return (
-    <MapContainer center={position} zoom={6} scrollWheelZoom={true}>
+    <MapContainer center={position} zoom={4} scrollWheelZoom={true}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
