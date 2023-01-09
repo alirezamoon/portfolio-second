@@ -1,4 +1,8 @@
-import Map from "./map"
+import dynamic from "next/dynamic"
+
+const Map = dynamic(() => import("./map"), {
+  ssr: false,
+})
 
 const Contact = () => {
   return (
