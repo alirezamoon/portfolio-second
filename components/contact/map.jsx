@@ -23,7 +23,7 @@ const Map = () => {
     <MapContainer center={position} zoom={6} scrollWheelZoom={true}>
       <TileLayer
         attribution='<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="'https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png"
+        url="https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png"
       />
       <Marker position={position} icon={iconPerson}>
         <Popup>I am here</Popup>
