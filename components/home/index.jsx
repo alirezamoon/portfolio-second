@@ -20,7 +20,7 @@ const Home = () => {
                   <br />
                   <span>I&apos;m </span>
                   <A
-                    className={`!inline-block !text-5xl md:!text-7xl animate-logo md:animate-none ${bgAuto} md:!bg-auto`}
+                    className={`!inline-block !text-5xl md:!text-7xl animate-logo lg:animate-none ${bgAuto} lg:!bg-auto`}
                     onAnimationEnd={() => setBgAuto("!bg-auto")}
                   />
                   <span>lireza</span>
