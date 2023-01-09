@@ -77,9 +77,12 @@ module.exports = {
           "0%": { transform: "translateX(-20px)" },
           "100%": { transform: "translateX(0)" },
         },
-        logo: {
+        navLogo: {
           "0%": { transform: "translateY(-100%)" },
           "100%": { transform: "translateY(0)" },
+        },
+        logo: {
+          to: { backgroundPosition: "200% center" },
         },
       },
       animation: {
@@ -93,7 +96,8 @@ module.exports = {
         linkedin: "linkedin 1s ease-in-out forwards",
         linkedinMobile: "linkedinMobile 500ms ease-in-out forwards",
         menuItems: "menuItems 500ms ease-in-out forwards",
-        logo: "logo 500ms ease-in-out forwards",
+        navLogo: "logo 500ms ease-in-out forwards",
+        logo: "logo 1s linear 0s 3",
       },
     },
   },

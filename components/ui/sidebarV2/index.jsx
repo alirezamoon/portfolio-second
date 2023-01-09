@@ -9,7 +9,7 @@ const Sidebar = () => {
         className="flex md:flex-col flex-wrap bg-gray-darker w-full md:w-16 justify-between items-center
                   px-2 md:px-0 h-16 md:h-full fixed top-0 left-0"
       >
-        <A className={"text-4xl md:mt-4 md:mx-auto animate-logo"} />
+        <A className={"text-4xl md:mt-4 md:mx-auto animate-navLogo"} />
         <Menu />
         <SocialMedia />
       </div>

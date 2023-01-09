@@ -1,7 +1,10 @@
 import A from "components/ui/a"
 import Link from "next/link"
+import { useState } from "react"
 
 const Home = () => {
+  const [bgAuto, setBgAuto] = useState("!bg-[length:200%_auto]")
+
   return (
     <div className="flex justify-between p-2 sm:p-6 md:p-12">
       <div className="flex flex-col">
@@ -16,7 +19,10 @@ const Home = () => {
                   <span>Hi,</span>
                   <br />
                   <span>I&apos;m </span>
-                  <A className="!inline-block !text-5xl md:!text-7xl" />
+                  <A
+                    className={`!inline-block !text-5xl md:!text-7xl animate-logo md:animate-none ${bgAuto} md:!bg-auto`}
+                    onAnimationEnd={() => setBgAuto("!bg-auto")}
+                  />
                   <span>lireza</span>
                   <br />
                   <span>web developer</span>
@@ -46,9 +52,11 @@ const Home = () => {
           <p className="tag">&#8826;/html&#8827;</p>
         </div>
       </div>
-      {/* <A className="!text-[500px] before:content-['A'] before:animate-bigLogo" /> */}
       <div className="hidden lg:flex overflow-hidden flex-1 justify-center items-center">
-        <A className="lg:!text-[400px] xl:!text-[600px] -rotate-[30deg] h-fit" />
+        <A
+          className={`animate-logo text-9xl -rotate-[30deg] lg:!text-[400px] xl:!text-[600px] ${bgAuto}`}
+          onAnimationEnd={() => setBgAuto("!bg-auto")}
+        />
       </div>
     </div>
   )
