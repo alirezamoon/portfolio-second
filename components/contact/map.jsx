@@ -23,7 +23,7 @@ const Map = () => {
     <MapContainer center={position} zoom={6} scrollWheelZoom={true}>
       <TileLayer
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=pk.eyJ1IjoiZGFya2FscGhhIiwiYSI6ImNrdXpiamE4Nzdhb3QzMnE2eWttcGd6Z2MifQ.864qAY7XT7oaAhjs95jesQ"
+        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png?api_key=https://www.alirezakhanamani.ir/contact"
       />
       <Marker position={position} icon={iconPerson}>
         <Popup>I am here</Popup>
