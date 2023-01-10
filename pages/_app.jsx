@@ -14,10 +14,6 @@ function MyApp({ Component, pageProps }) {
         <Head>
           <link rel="icon" type="image/png" href="/assets/images/a.png" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css"
-          />
           <title>Alireza Khanamani</title>
         </Head>
         <Component {...pageProps} />

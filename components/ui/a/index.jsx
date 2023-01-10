@@ -8,8 +8,8 @@ const A = ({ className, style, ...props }) => {
       style={{
         background:
           "linear-gradient(60deg, #fc0853 31%, #fc0853 65%, #08fdd8 65%, #08fdd8 72%)",
-        "-webkit-background-clip": "text",
-        "-webkit-text-fill-color": "transparent",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
         ...style,
       }}
       {...props}
