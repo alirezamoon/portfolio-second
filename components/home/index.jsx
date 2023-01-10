@@ -6,7 +6,7 @@ const Home = () => {
   const [bgAuto, setBgAuto] = useState("!bg-[length:200%_auto]")
 
   return (
-    <div className="flex justify-between p-2 sm:p-6 md:p-12">
+    <div className="flex justify-between p-2 sm:p-6 md:p-12 lg:pr-0">
       <div className="flex flex-col">
         <div className="[&_.tag]:text-gray-tag flex-1 flex flex-col">
           <p className="tag">&#8826;html&#8827;</p>
@@ -39,7 +39,7 @@ const Home = () => {
               <div className="button">
                 <p className="tag">&#8826;button&#8827;</p>
                 <button
-                  className="border border-teal-main text-teal-main rounded px-4 py-1 ml-3 md:ml-6 my-1
+                  className="border border-teal-main text-teal-main rounded px-4 py-1 ml-3 md:ml-6 my-1  
                                 [&:hover]:bg-teal-main [&:hover]:text-gray-main2 transition-colors duration-300"
                 >
                   <Link href="/contact">Contact me!</Link>
