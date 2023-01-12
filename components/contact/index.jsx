@@ -8,9 +8,9 @@ import * as yup from "yup"
 import toast from "react-hot-toast"
 import { useState } from "react"
 
-// const Map = dynamic(() => import("./map"), {
-//   ssr: false,
-// })
+const Map = dynamic(() => import("./map"), {
+  ssr: false,
+})
 
 const successMessage = () => toast.success("Done! thank you")
 const errorMessage = () => toast.error("Something went wrong!")
@@ -72,6 +72,14 @@ const Contact = () => {
                 <p className="tag">&#8826;/h2&#8827;</p>
               </div>
               <div>
+                <p className="tag">&#8826;p&#8827;</p>
+                <p className="ml-3 md:ml-6 text-white">
+                  if you have any questions, please don&apos;t hesitate to
+                  contact me...
+                </p>
+                <p className="tag">&#8826;/p&#8827;</p>
+              </div>
+              <div>
                 <p className="tag">&#8826;form&#8827;</p>
                 <form
                   className="flex flex-col gap-2 ml-3 md:ml-6 max-w-xl mt-3"
@@ -91,7 +99,7 @@ const Contact = () => {
                     error={Boolean(errors.message)}
                   />
                   <MyButton
-                    className="self-end my-3 !rounded-none min-w-[150px] relative"
+                    className="self-end my-3 !rounded-none min-w-[200px] relative h-12 tracking-widest"
                     disabled={isLoadingSendMessage}
                   >
                     {isLoadingSendMessage ? (
@@ -123,10 +131,7 @@ const Contact = () => {
                 <p className="tag">&#8826;/form&#8827;</p>
               </div>
               {/* <div className="text-white ml-3 md:ml-6 flex flex-col gap-2 mt-6">
-                <p>
-                  if you have any questions, please don&apos;t hesitate to
-                  contact me...
-                </p>
+                <p>More Info:</p>
                 <p>
                   <span className="text-teal-main">Email: </span>
                   <span>khanamani1998@gmail.com</span>
@@ -147,7 +152,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex-1 w-full min-h-[400px] [&>div]:w-full [&>div]:h-full [&>div]:bg-[#090909]">
-        {/* <Map /> */}
+        <Map />
       </div>
     </div>
   )
