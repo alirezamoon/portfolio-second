@@ -49,7 +49,7 @@ const Contact = () => {
               <div>
                 <p className="tag">&#8826;form&#8827;</p>
                 <form
-                  className="flex flex-col gap-2 ml-3 md:ml-6 max-w-xl"
+                  className="flex flex-col gap-2 ml-3 md:ml-6 max-w-xl mt-3"
                   onSubmit={handleSubmit(onSubmit)}
                 >
                   <div className="flex gap-2 flex-col sm:flex-row">
