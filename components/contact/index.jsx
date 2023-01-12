@@ -54,7 +54,7 @@ const Contact = () => {
                 >
                   <div className="flex gap-2 flex-col sm:flex-row">
                     <MyInput register={register("name")} />
-                    <MyInput register={register("email")} />
+                    <MyInput register={register("email")} type="email" />
                   </div>
                   <MyInput register={register("subject")} />
                   <MyTextArea register={register("message")} />
