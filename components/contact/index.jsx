@@ -99,7 +99,7 @@ const Contact = () => {
                     error={Boolean(errors.message)}
                   />
                   <MyButton
-                    className="self-end my-3 !rounded-none min-w-[200px] relative h-12 tracking-widest"
+                    className="self-end my-3 !rounded-none !min-w-[200px] relative !h-12 tracking-widest"
                     disabled={isLoadingSendMessage}
                   >
                     {isLoadingSendMessage ? (
