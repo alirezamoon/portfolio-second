@@ -17,6 +17,7 @@ module.exports = {
           menu: "#808081",
           tag: "#515152",
           1000: "#8d8d8d",
+          2000: "#2b2b2b",
         },
         teal: {
           main: "#08fdd8",

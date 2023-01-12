@@ -1,10 +1,17 @@
+import MyInput from "components/ui/input"
+import MyTextArea from "components/ui/input/textArea"
 import dynamic from "next/dynamic"
+import { useForm } from "react-hook-form"
 
-const Map = dynamic(() => import("./map"), {
-  ssr: false,
-})
+// const Map = dynamic(() => import("./map"), {
+//   ssr: false,
+// })
 
 const Contact = () => {
+  const { register, handleSubmit, watch, formState } = useForm()
+
+  const onSubmit = (data) => console.log(data)
+
   return (
     <div className="flex flex-col xl:flex-row">
       <div className="flex flex-1 flex-col p-2 sm:p-6 md:p-12">
@@ -18,7 +25,23 @@ const Contact = () => {
                 <h2 className="top-title">Contact me</h2>
                 <p className="tag">&#8826;/h2&#8827;</p>
               </div>
-              <div className="text-white ml-3 md:ml-6 flex flex-col gap-2 mt-6">
+              <div>
+                <p className="tag">&#8826;form&#8827;</p>
+                <form
+                  className="flex flex-col gap-2 ml-3 md:ml-6"
+                  onSubmit={handleSubmit(onSubmit)}
+                >
+                  <div className="flex gap-2">
+                    <MyInput register={register("name")} />
+                    <MyInput register={register("email")} />
+                  </div>
+                  <MyInput register={register("subject")} />
+                  <MyTextArea register={register("message")} />
+                  <button type="submit">Send Message!</button>
+                </form>
+                <p className="tag">&#8826;/form&#8827;</p>
+              </div>
+              {/* <div className="text-white ml-3 md:ml-6 flex flex-col gap-2 mt-6">
                 <p>
                   if you have any questions, please don&apos;t hesitate to
                   contact me...
@@ -35,7 +58,7 @@ const Contact = () => {
                   <span className="text-teal-main">Phone: </span>
                   <span>+98 913 583-3155</span>
                 </p>
-              </div>
+              </div> */}
             </div>
             <p className="tag">&#8826;/body&#8827;</p>
           </div>
@@ -43,7 +66,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex-1 w-full [&>div]:w-full [&>div]:h-full [&>div]:bg-[#090909]">
-        <Map />
+        {/* <Map /> */}
       </div>
     </div>
   )
