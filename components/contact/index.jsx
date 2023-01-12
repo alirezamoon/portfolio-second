@@ -1,3 +1,4 @@
+import MyButton from "components/ui/button"
 import MyInput from "components/ui/input"
 import MyTextArea from "components/ui/input/textArea"
 import dynamic from "next/dynamic"
@@ -37,7 +38,7 @@ const Contact = () => {
                   </div>
                   <MyInput register={register("subject")} />
                   <MyTextArea register={register("message")} />
-                  <button type="submit">Send Message!</button>
+                  <MyButton className="self-end my-3">Send Message!</MyButton>
                 </form>
                 <p className="tag">&#8826;/form&#8827;</p>
               </div>

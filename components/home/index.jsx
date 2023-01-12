@@ -1,4 +1,5 @@
 import A from "components/ui/a"
+import MyButton from "components/ui/button"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -38,12 +39,9 @@ const Home = () => {
               </div>
               <div className="button">
                 <p className="tag">&#8826;button&#8827;</p>
-                <button
-                  className="border border-teal-main text-teal-main rounded px-4 py-1 ml-3 md:ml-6 my-1 
-                            hover:bg-teal-main hover:text-gray-main2 duration-300"
-                >
+                <MyButton className="ml-3 md:ml-6 my-1">
                   <Link href="/contact">Contact me!</Link>
-                </button>
+                </MyButton>
                 <p className="tag">&#8826;/button&#8827;</p>
               </div>
             </div>
