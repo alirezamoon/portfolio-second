@@ -1,5 +1,5 @@
-import dbConnect from "../../lib/dbConnect"
-import Message from "../../models/message"
+import dbConnect from "mongodb/lib/dbConnect"
+import Message from "mongodb/models/message"
 
 export default async (req, res) => {
   const { method } = req
