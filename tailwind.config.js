@@ -19,10 +19,8 @@ module.exports = {
           1000: "#8d8d8d",
           2000: "#2b2b2b",
         },
-        teal: {
-          main: "#08fdd8",
-          // main: "#0AD7B8",
-        },
+        teal: { main: "#08fdd8" },
+        red: { main: "#fc0853" },
       },
       fontFamily: {
         logo: ["Bowlby One SC", "cursive"],

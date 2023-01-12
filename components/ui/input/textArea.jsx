@@ -1,4 +1,4 @@
-const MyTextArea = ({ placeholder, register }) => {
+const MyTextArea = ({ register, error }) => {
   return (
     <div className="w-full relative">
       <textarea
@@ -7,7 +7,13 @@ const MyTextArea = ({ placeholder, register }) => {
         placeholder={register.name}
         {...register}
       />
-      <div className="bg-teal-main h-[1px] w-0 duration-500 peer-focus:w-full" />
+      <div
+        className={` h-[1px] duration-500 ${
+          error
+            ? " bg-red-main w-full "
+            : " bg-teal-main peer-focus:w-full w-0 "
+        }`}
+      />
     </div>
   )
 }
