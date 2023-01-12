@@ -40,7 +40,7 @@ const Home = () => {
                 <p className="tag">&#8826;button&#8827;</p>
                 <button
                   className="border border-teal-main text-teal-main rounded px-4 py-1 ml-3 md:ml-6 my-1  
-                                [&:hover]:bg-teal-main [&:hover]:text-gray-main2 transition-colors duration-300"
+                             bg-gradient-to-r from-teal-50 to-teal-50 bg-[length:200%_auto]"
                 >
                   <Link href="/contact">Contact me!</Link>
                 </button>
