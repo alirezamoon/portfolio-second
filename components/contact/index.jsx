@@ -4,14 +4,25 @@ import MyTextArea from "components/ui/input/textArea"
 import dynamic from "next/dynamic"
 import { useForm } from "react-hook-form"
 
-// const Map = dynamic(() => import("./map"), {
-//   ssr: false,
-// })
+const Map = dynamic(() => import("./map"), {
+  ssr: false,
+})
 
 const Contact = () => {
-  const { register, handleSubmit, watch, formState } = useForm()
+  const { register, handleSubmit } = useForm()
 
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = (data) => {
+    fetch("api/message", {
+      method: "POST",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      headers: { "Content-Type": "application/json" },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
+      body: JSON.stringify(data),
+    }).then((res) => console.log(res))
+  }
 
   return (
     <div className="flex flex-col xl:flex-row">
@@ -29,10 +40,10 @@ const Contact = () => {
               <div>
                 <p className="tag">&#8826;form&#8827;</p>
                 <form
-                  className="flex flex-col gap-2 ml-3 md:ml-6"
+                  className="flex flex-col gap-2 ml-3 md:ml-6 max-w-xl"
                   onSubmit={handleSubmit(onSubmit)}
                 >
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-col sm:flex-row">
                     <MyInput register={register("name")} />
                     <MyInput register={register("email")} />
                   </div>
@@ -67,7 +78,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex-1 w-full [&>div]:w-full [&>div]:h-full [&>div]:bg-[#090909]">
-        {/* <Map /> */}
+        <Map />
       </div>
     </div>
   )
