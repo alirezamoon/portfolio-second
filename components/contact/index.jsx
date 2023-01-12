@@ -3,10 +3,14 @@ import MyInput from "components/ui/input"
 import MyTextArea from "components/ui/input/textArea"
 import dynamic from "next/dynamic"
 import { useForm } from "react-hook-form"
+import toast from "react-hot-toast"
 
-const Map = dynamic(() => import("./map"), {
-  ssr: false,
-})
+// const Map = dynamic(() => import("./map"), {
+//   ssr: false,
+// })
+
+const successMessage = () => toast.success("Done! thank you")
+const errorMessage = () => toast.error("Something went wrong!")
 
 const Contact = () => {
   const { register, handleSubmit } = useForm()
@@ -21,7 +25,12 @@ const Contact = () => {
       redirect: "follow",
       referrerPolicy: "no-referrer",
       body: JSON.stringify(data),
-    }).then((res) => console.log(res))
+    })
+      .then((res) => {
+        if (res.ok) successMessage()
+        else throw new Error("some thing went wrong")
+      })
+      .catch(errorMessage)
   }
 
   return (
@@ -78,7 +87,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex-1 w-full min-h-[400px] [&>div]:w-full [&>div]:h-full [&>div]:bg-[#090909]">
-        <Map />
+        {/* <Map /> */}
       </div>
     </div>
   )
