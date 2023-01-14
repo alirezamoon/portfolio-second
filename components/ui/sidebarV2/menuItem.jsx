@@ -35,7 +35,8 @@ const MenuItem = ({ data }) => {
     <Link
       href={data.route}
       className={`relative w-full h-12 flex justify-center items-center  
-                  md:[&:hover>p]:opacity-100 md:[&:hover>div]:opacity-0 [&:hover_path]:fill-teal-main duration-300 ${
+                  md:[&:hover>p]:opacity-100 md:[&:hover>svg]:opacity-0 [&:hover_path]:fill-teal-main duration-300
+                  [&>*]:transition-opacity [&>*]:last:first:duration-300 ${
                     data.route !== "/"
                       ? router.pathname.includes(data.route)
                         ? " [&_path]:fill-teal-main"
@@ -45,10 +46,10 @@ const MenuItem = ({ data }) => {
                       : ""
                   }`}
     >
-      <div className="transition-opacity duration-300">{icon}</div>
+      {icon}
       <p
         className="absolute top-1/2 -translate-y-1/2 w-full text-center opacity-0
-                     transition-opacity duration-300 text-teal-main text-sm"
+                      text-teal-main text-sm"
       >
         {data.title}
       </p>

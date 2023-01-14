@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin")
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -83,6 +85,10 @@ module.exports = {
         logo: {
           to: { backgroundPosition: "200% center" },
         },
+        form: {
+          "0%": { transform: "translateY(100px)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
@@ -97,8 +103,24 @@ module.exports = {
         menuItems: "menuItems 500ms ease-in-out forwards",
         navLogo: "logo 500ms ease-in-out forwards",
         logo: "logo 1s linear 0s infinite",
+        form: "form ease-out forwards",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".animation-duration-100": { animationDuration: "100ms" },
+        ".animation-duration-200": { animationDuration: "200ms" },
+        ".animation-duration-300": { animationDuration: "300ms" },
+        ".animation-duration-400": { animationDuration: "400ms" },
+        ".animation-duration-500": { animationDuration: "500ms" },
+        ".animation-duration-600": { animationDuration: "600ms" },
+        ".animation-duration-700": { animationDuration: "700ms" },
+        ".animation-duration-800": { animationDuration: "800ms" },
+        ".animation-duration-900": { animationDuration: "900ms" },
+        ".animation-duration-1000": { animationDuration: "1s" },
+      })
+    }),
+  ],
 }

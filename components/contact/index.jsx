@@ -86,20 +86,29 @@ const Contact = () => {
                   onSubmit={handleSubmit(onSubmit)}
                 >
                   <div className="flex gap-2 flex-col sm:flex-row">
-                    <MyInput register={register("name")} />
+                    <MyInput
+                      register={register("name")}
+                      className="animate-form animation-duration-400"
+                    />
                     <MyInput
                       register={register("email")}
                       type="email"
                       error={Boolean(errors.email)}
+                      className="animate-form animation-duration-600"
                     />
                   </div>
-                  <MyInput register={register("subject")} />
+                  <MyInput
+                    register={register("subject")}
+                    className="animate-form animation-duration-800"
+                  />
                   <MyTextArea
                     register={register("message")}
                     error={Boolean(errors.message)}
+                    className="animate-form animation-duration-900"
                   />
                   <MyButton
-                    className="self-end my-3 !rounded-none !min-w-[200px] relative !h-12 tracking-widest"
+                    className="self-end my-3 !rounded-none !min-w-[200px] relative !h-12
+                              tracking-widest animate-form animation-duration-1000"
                     disabled={isLoadingSendMessage}
                   >
                     {isLoadingSendMessage ? (

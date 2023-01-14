@@ -1,7 +1,7 @@
-const MyInput = ({ register, type = "text", error }) => {
+const MyInput = ({ register, type = "text", error, className }) => {
   console.log("error:", error)
   return (
-    <div className="w-full relative">
+    <div className={`w-full relative ${className}`}>
       <input
         type={type}
         autoComplete="off"
