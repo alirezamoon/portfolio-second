@@ -160,7 +160,7 @@ const Contact = () => {
           <p className="tag">&#8826;/html&#8827;</p>
         </div>
       </div>
-      <div className="flex-1 w-full min-h-[400px] [&>div]:w-full [&>div]:h-full [&>div]:bg-[#090909]">
+      <div className="flex-1 w-full min-h-[400px] [&>div]:w-full [&>div]:h-full [&>div]:min-h-[400px] [&>div]:bg-[#090909]">
         <Map />
       </div>
     </div>

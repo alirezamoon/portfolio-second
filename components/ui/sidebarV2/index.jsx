@@ -4,7 +4,7 @@ import SocialMedia from "./socialMedis"
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className="z-10">
       <div
         className="flex md:flex-col flex-wrap bg-gray-darker w-full md:w-16 justify-between items-center
                   px-2 md:px-0 h-16 md:h-full fixed top-0 left-0"
