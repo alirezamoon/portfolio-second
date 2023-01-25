@@ -101,7 +101,7 @@ module.exports = {
         linkedin: "linkedin 1s ease-in-out forwards",
         linkedinMobile: "linkedinMobile 500ms ease-in-out forwards",
         menuItems: "menuItems 500ms ease-in-out forwards",
-        navLogo: "logo 500ms ease-in-out forwards",
+        navLogo: "navLogo 500ms ease-in-out forwards",
         logo: "logo 1s linear 0s infinite",
         form: "form ease-out forwards",
       },
