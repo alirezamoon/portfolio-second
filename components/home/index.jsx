@@ -40,7 +40,9 @@ const Home = () => {
               <div className="button">
                 <p className="tag">&#8826;button&#8827;</p>
                 <MyButton className="ml-3 md:ml-6 my-1">
-                  <Link href="/contact">Contact me!</Link>
+                  <Link href="/contact" className="block w-full h-full">
+                    Contact me!
+                  </Link>
                 </MyButton>
                 <p className="tag">&#8826;/button&#8827;</p>
               </div>
