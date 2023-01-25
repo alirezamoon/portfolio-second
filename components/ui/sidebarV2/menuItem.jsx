@@ -35,7 +35,7 @@ const MenuItem = ({ data }) => {
     <Link
       href={data.route}
       className={`relative w-full h-12 flex justify-center items-center  
-                  md:[&:hover>p]:opacity-100 md:[&:hover>svg]:opacity-0 [&:hover_path]:fill-teal-main duration-300
+                  md:[&:hover>p]:opacity-100 md:[&:hover>svg]:opacity-0 duration-300
                   [&>*]:transition-opacity [&>*]:last:first:duration-300 ${
                     data.route !== "/"
                       ? router.pathname.includes(data.route)
