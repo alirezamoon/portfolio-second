@@ -19,6 +19,7 @@ const Skills = () => {
               <div>
                 <p className="tag">&#8826;p&#8827;</p>
                 <p className="ml-3 md:ml-6 text-white max-w-xl">Hip Hip</p>
+                <a href="https://alireza-bank-dash.netlify.app/" target="_blank">bank dashboard</a>
                 <p className="tag">&#8826;/p&#8827;</p>
               </div>
             </div>
